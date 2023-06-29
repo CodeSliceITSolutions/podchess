@@ -16,7 +16,6 @@ class ProfileWidget extends StatelessWidget {
         height: 10.h,
         child: Row(
           children: [
-            //SizedBox(height: 1.h),
             // SvgPicture.asset(ImageConstants.profilepng),
             SizedBox(
               width: 22.w,
