@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:podchess_app/presentation/screens/dashboard/components/widgets/navigation_bar.dart';
-import 'package:podchess_app/presentation/theme/app_color.dart';
 
 class AppScaffold extends StatelessWidget {
   const AppScaffold({

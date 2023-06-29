@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:podchess_app/common/constants/string_constants.dart';
-
 import 'app_color.dart';
 
 class CustomThemeData {

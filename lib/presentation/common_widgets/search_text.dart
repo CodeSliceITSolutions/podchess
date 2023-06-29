@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 class NeoText extends StatelessWidget {
-  final String text;
-
   const NeoText({Key? key, required this.text}) : super(key: key);
+
+  final String text;
 
   @override
   Widget build(BuildContext context) {

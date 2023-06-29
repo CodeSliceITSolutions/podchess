@@ -8,7 +8,7 @@ import 'package:sizer/sizer.dart';
 class PodcastWidget extends StatelessWidget {
   PodcastWidget({Key? key}) : super(key: key);
 
-  List<BrowseModel> podcastData = [
+  final List<BrowseModel> podcastData = [
     BrowseModel(
         title: StringConstants.dol1,
         image: ImageConstants.dol1,

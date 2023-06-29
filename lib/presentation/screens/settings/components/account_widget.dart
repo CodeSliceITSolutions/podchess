@@ -8,7 +8,7 @@ import 'package:sizer/sizer.dart';
 class AccountWidget extends StatelessWidget {
   AccountWidget({Key? key}) : super(key: key);
 
-  List<BrowseModel> accountData = [
+  final List<BrowseModel> accountData = [
     BrowseModel(
       title: StringConstants.accountSetting,
       image: ImageConstants.profile,

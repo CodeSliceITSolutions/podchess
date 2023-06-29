@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:podchess_app/common/constants/image_constants.dart';
 import 'package:podchess_app/common/constants/string_constants.dart';
+import 'package:podchess_app/presentation/common_widgets/divider_widget.dart';
 import 'package:podchess_app/presentation/common_widgets/genres_text.dart';
 import 'package:podchess_app/presentation/screens/search/components/widgets/search_widget.dart';
 import 'package:sizer/sizer.dart';
-
 import 'components/widgets/podcast_widget.dart';
 
 class SearchScreen extends StatelessWidget {
@@ -28,12 +28,7 @@ class SearchScreen extends StatelessWidget {
         ),
       ),
        SizedBox(height: 2.h),
-       Divider(
-        color: Theme.of(context).primaryColor,
-        thickness: 0.5,
-        indent: 3.h,
-        endIndent: 3.h,
-      ),
+      const DividerWidget(),
       Padding(
           padding: EdgeInsets.only(right: 30.h, top: 3.h),
           child: const GenresText(text: StringConstants.searchResult)),

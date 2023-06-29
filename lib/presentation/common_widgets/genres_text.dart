@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 class GenresText extends StatelessWidget {
-  final String text;
-
   const GenresText({Key? key, required this.text}) : super(key: key);
+
+  final String text;
 
   @override
   Widget build(BuildContext context) {

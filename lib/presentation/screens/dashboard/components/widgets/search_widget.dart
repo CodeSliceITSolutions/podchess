@@ -19,7 +19,7 @@ class SearchItem extends StatelessWidget {
       child: Row(
         children: [
           Container(
-            width: 41.h,
+            width: 83.w,
             height: 6.h,
             decoration: boxDecor,
             child: Row(

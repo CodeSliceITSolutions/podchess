@@ -10,14 +10,13 @@ class BrowseWidget extends StatelessWidget {
     Key? key,
   }) : super(key: key);
 
-  List<BrowseModel> browseData = [
+  final List<BrowseModel> browseData = [
     BrowseModel(title: StringConstants.fashion, image: ImageConstants.fashion),
     BrowseModel(title: StringConstants.social, image: ImageConstants.social),
     BrowseModel(title: StringConstants.stories, image: ImageConstants.stories),
     BrowseModel(title: StringConstants.comedy, image: ImageConstants.comedy),
     BrowseModel(title: StringConstants.sports, image: ImageConstants.sports),
-    BrowseModel(
-        title: StringConstants.polistics, image: ImageConstants.polistics),
+    BrowseModel(title: StringConstants.polistics, image: ImageConstants.polistics),
     BrowseModel(title: StringConstants.happy, image: ImageConstants.boy),
     BrowseModel(title: StringConstants.games, image: ImageConstants.game),
     BrowseModel(title: StringConstants.happy, image: ImageConstants.boy),

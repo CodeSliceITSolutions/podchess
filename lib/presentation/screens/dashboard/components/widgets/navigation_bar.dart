@@ -2,27 +2,44 @@ import 'package:flutter/material.dart';
 import 'package:podchess_app/common/constants/image_constants.dart';
 import 'package:podchess_app/common/constants/string_constants.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:podchess_app/presentation/theme/app_color.dart';
 import 'package:sizer/sizer.dart';
 
 class BottomNavigationItems extends StatefulWidget {
-  BottomNavigationItems({super.key, required this.pageNumber, this.onChange});
+  const BottomNavigationItems(
+      {super.key, required this.pageNumber, this.onChange});
 
-  Function? onChange;
+  final Function? onChange;
   final int pageNumber;
-
-  List list = [
-    ImageConstants.home,
-    ImageConstants.search,
-    ImageConstants.bookmarkSvg,
-    ImageConstants.setting
-  ];
 
   @override
   State<BottomNavigationItems> createState() => _BottomNavigationItemsState();
 }
 
 class _BottomNavigationItemsState extends State<BottomNavigationItems> {
+
+  final List<BottomNavigationBarItem> _bottomNavigationBarItems = [
+    BottomNavigationBarItem(
+        label: StringConstants.emptyString,
+        icon: SvgPicture.asset(
+          ImageConstants.home,
+        )),
+    BottomNavigationBarItem(
+        label: StringConstants.emptyString,
+        icon: SvgPicture.asset(
+          ImageConstants.search,
+        )),
+    BottomNavigationBarItem(
+        label: StringConstants.emptyString,
+        icon: SvgPicture.asset(
+          ImageConstants.bookmarkSvg,
+        )),
+    BottomNavigationBarItem(
+        label: StringConstants.emptyString,
+        icon: SvgPicture.asset(
+          ImageConstants.setting,
+        ))
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -35,33 +52,11 @@ class _BottomNavigationItemsState extends State<BottomNavigationItems> {
         borderRadius: BorderRadius.circular(30.0),
         child: BottomNavigationBar(
           backgroundColor: Theme.of(context).canvasColor,
-          items: [
-            BottomNavigationBarItem(
-                label: StringConstants.emptyString,
-                icon: SvgPicture.asset(ImageConstants.home,
-                   // color: Theme.of(context).colorScheme.primary
-                )
-            ),
-            BottomNavigationBarItem(
-                label: StringConstants.emptyString,
-                icon: SvgPicture.asset(ImageConstants.search,
-                   // color: Theme.of(context).colorScheme.primary
-                )),
-            BottomNavigationBarItem(
-                label: StringConstants.emptyString,
-                icon: SvgPicture.asset(ImageConstants.bookmarkSvg,
-                    color: Theme.of(context).colorScheme.primary
-                )),
-            BottomNavigationBarItem(
-                label: StringConstants.emptyString,
-                icon: SvgPicture.asset(ImageConstants.setting,
-                   // color: Theme.of(context).colorScheme.primary
-                ))
-          ],
+          items: _bottomNavigationBarItems.map((e) => e).toList(),
           unselectedItemColor: Colors.grey,
           type: BottomNavigationBarType.fixed,
           selectedItemColor: Colors.blue,
-         // selectedIconTheme: const IconThemeData(color: Colors.blue),
+          // selectedIconTheme: const IconThemeData(color: Colors.blue),
           currentIndex: widget.pageNumber,
           onTap: (value) {
             widget.onChange!(value);
