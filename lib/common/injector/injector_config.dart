@@ -1,4 +1,5 @@
 import 'package:kiwi/kiwi.dart';
+import 'package:podchess_app/bloc/browse_all_bloc.dart';
 
 //part 'injector_config.g.dart';
 
@@ -24,6 +25,7 @@ abstract class InjectorConfig {
 
   // ============ BLOCS ============
 
+  @Register.singleton(BrowseAllBloc)
   void _configureBlocs();
 
 
