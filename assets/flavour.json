@@ -1,0 +1,23 @@
+{
+"app_title": "CSIT",
+"prod_url" : "https://ecart.codeslice.in",
+"dev_url" : "https://ecart.codeslice.in",
+"app_short_title": "CSIT",
+"android_app_id": "com.csit.ecom",
+"ios_app_id": "",
+"logo": "csit/images/app-logo.png",
+"splash_bg": "assets/",
+"splash_logo": "assets/",
+"splash_title": "CSIT Ecommerce App",
+"splash_duration": 2500,
+"splash_legal_name":"Powered by CodeSlice Tech",
+"copy_right_message": "Powered by CodeSlice Tech",
+"support_email" : "info@csit.com",
+"privacy_policy_url": "https://csit/privacy-policy",
+"terms_of_use_url": "https://csit/terms-of-use",
+"app_theme" : {
+      "primary_color" : "0XFFFFFF",
+      "secondary_color" : "0XFFFFFF"
+}
+
+}

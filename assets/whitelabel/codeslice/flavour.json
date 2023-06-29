@@ -1,0 +1,23 @@
+{
+  "app_title": "CodeSlice",
+  "prod_url": "https://ecart.codeslice.in",
+  "dev_url": "https://ecart.codeslice.in",
+  "app_short_title": "CodeSlice",
+  "android_app_id": "com.csit.ecom",
+  "asset_path": "assets/whitelabel/",
+  "ios_app_id": "",
+  "logo": "codeslice/images/app-logo.png",
+  "splash_bg": "assets/",
+  "splash_logo": "assets/",
+  "splash_title": "CodeSlice Ecommerce App",
+  "splash_duration": 2500,
+  "splash_legal_name": "Powered by CodeSlice Tech",
+  "copy_right_message": "Powered by CodeSlice Tech",
+  "support_email": "info@codeslice.com",
+  "privacy_policy_url": "https://codeslice/privacy-policy",
+  "terms_of_use_url": "https://codeslice/terms-of-use",
+  "app_theme": {
+    "primary_color": "0XFFFFFF",
+    "secondary_color": "0XFFFFFF"
+  }
+}

@@ -1,0 +1,51 @@
+name: podchess_app
+description: A new Flutter project.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.19.6 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  http: ^0.13.4
+  kiwi: ^4.0.2
+  flutter_svg: ^0.22.0
+  flutter_bloc: ^8.1.1
+  sizer: ^2.0.15
+  flutter_offline: ^2.1.0
+  flutter_dotenv: ^5.0.2
+  flutter_flavor: ^3.1.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  app_codeslice:
+    path: ../app_codeslice
+
+  build_runner:
+  kiwi_generator: ^4.0.2
+  flutter_lints: ^2.0.0
+
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/images/svg/
+    - assets/images/png/
+    - assets/images/jpg/
+    - assets/whitelabel/csit/
+    - assets/whitelabel/codeslice/
+    - assets/whitelabel/csit/images/
+    - assets/whitelabel/codeslice/images/
+
+  fonts:
+    - family: Product Sans
+      fonts:
+        - asset: assets/fonts/Product_Sans_Regular.ttf
