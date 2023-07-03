@@ -51,8 +51,8 @@ class PodcastWidget extends StatelessWidget {
       child: ListView.builder(
           itemCount: podcastData.length,
           scrollDirection: Axis.vertical,
-          shrinkWrap: true,
-          padding: EdgeInsets.only(top: 3.h),
+          //shrinkWrap: true,
+          padding: EdgeInsets.only(top: 0.h),
           itemBuilder: (BuildContext context, int index) {
             return Padding(
               padding: EdgeInsets.only(left: 2.h, right: 2.h, bottom: 2.h),

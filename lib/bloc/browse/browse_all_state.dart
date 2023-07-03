@@ -3,11 +3,11 @@ part of 'browse_all_bloc.dart';
 @immutable
 abstract class BrowseAllState {
   BrowseAllState(
-      {this.eventState = BlocEventState.LOADING, this.message = "", this.list});
+      {this.eventState = BlocEventState.LOADING, this.list, this.message = ''});
 
   BlocEventState eventState;
   List<BrowseModel>? list;
-  String? message;
+  String message;
 }
 
 class BrowseInitialState extends BrowseAllState {
@@ -15,10 +15,16 @@ class BrowseInitialState extends BrowseAllState {
 }
 
 class BrowseLoadedState extends BrowseAllState {
-  final List<BrowseModel> list;
+  final List<BrowseModel> browseList;
 
-  BrowseLoadedState({required this.list})
-      : super(list: list, eventState: BlocEventState.LOADED);
+  BrowseLoadedState({required this.browseList})
+      : super(list: browseList, eventState: BlocEventState.LOADED);
+}
+
+class TopGenresLoadedState extends BrowseAllState {
+  final List<BrowseModel> genList;
+  TopGenresLoadedState({required this.genList})
+  :super(list: genList, eventState: BlocEventState.LOADED);
 }
 
 class BrowseErrorState extends BrowseAllState {

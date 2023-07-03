@@ -14,6 +14,7 @@ class SettingsScreen extends StatelessWidget {
         const ProfileWidget(),
         SizedBox(height: 1.h),
         const ImageWidget(),
+        SizedBox(height: 2.h),
         AccountWidget()
       ],
     );

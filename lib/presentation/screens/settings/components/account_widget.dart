@@ -41,6 +41,10 @@ class AccountWidget extends StatelessWidget {
       title: StringConstants.privacy,
       image: ImageConstants.privacy,
     ),
+    BrowseModel(
+      title: StringConstants.accountSetting,
+      image: ImageConstants.profile,
+    ),
   ];
 
   @override
@@ -49,6 +53,7 @@ class AccountWidget extends StatelessWidget {
       child: ListView.builder(
           itemCount: accountData.length,
           scrollDirection: Axis.vertical,
+          padding: EdgeInsets.only(top: 0.h),
           itemBuilder: (BuildContext context, int index) {
             return Padding(
               padding: EdgeInsets.only(left: 1.h, top: 1.h),

@@ -21,7 +21,7 @@ class SearchScreen extends StatelessWidget {
           children: [
             const GenresText(text: StringConstants.searchName),
             Padding(
-              padding: EdgeInsets.only(left: 26.h),
+              padding: EdgeInsets.only(left: 27.h),
               child: SvgPicture.asset(ImageConstants.close),
             ),
           ],
@@ -37,6 +37,7 @@ class SearchScreen extends StatelessWidget {
       Padding(
           padding: EdgeInsets.only(right: 32.h),
           child: const GenresText(text: StringConstants.podcast)),
+          SizedBox(height: 2.h),
           PodcastWidget(),
     ]);
   }

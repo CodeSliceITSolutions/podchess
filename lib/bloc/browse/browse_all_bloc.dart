@@ -20,33 +20,25 @@ class BrowseAllBloc extends Bloc<BrowseAllEvent, BrowseAllState> {
     if (event is GetBrowseAllEvent) {
       try {
         final List<BrowseModel> browseData = [
-          BrowseModel(
-              title: StringConstants.fashion, image: ImageConstants.fashion),
-          BrowseModel(
-              title: StringConstants.social, image: ImageConstants.social),
-          BrowseModel(
-              title: StringConstants.stories, image: ImageConstants.stories),
-          BrowseModel(
-              title: StringConstants.comedy, image: ImageConstants.comedy),
-          BrowseModel(
-              title: StringConstants.sports, image: ImageConstants.sports),
-          BrowseModel(
-              title: StringConstants.polistics,
-              image: ImageConstants.polistics),
+          BrowseModel(title: StringConstants.fashion, image: ImageConstants.fashion),
+          BrowseModel(title: StringConstants.social, image: ImageConstants.social),
+          BrowseModel(title: StringConstants.stories, image: ImageConstants.stories),
+          BrowseModel(title: StringConstants.comedy, image: ImageConstants.comedy),
+          BrowseModel(title: StringConstants.sports, image: ImageConstants.sports),
+          BrowseModel(title: StringConstants.polistics, image: ImageConstants.polistics),
           BrowseModel(title: StringConstants.happy, image: ImageConstants.boy),
           BrowseModel(title: StringConstants.games, image: ImageConstants.game),
           BrowseModel(title: StringConstants.happy, image: ImageConstants.boy),
           BrowseModel(title: StringConstants.games, image: ImageConstants.game),
         ];
 
-        emit(BrowseLoadedState(list: browseData));
+        emit(BrowseLoadedState(browseList: browseData));
       } catch (ex) {
         emit(BrowseErrorState(ex.toString().replaceAll("Exception:", '')));
       }
     }
 
-    
-    if (event is GetBrowseAllEvent) {
+    if (event is GetTopGenresEvent) {
       try {
         final List<BrowseModel> topGenresData = [
           BrowseModel(
@@ -57,7 +49,7 @@ class BrowseAllBloc extends Bloc<BrowseAllEvent, BrowseAllState> {
               title: StringConstants.stories, image: ImageConstants.stories),
         ];
 
-        emit(BrowseLoadedState(list: topGenresData));
+        emit(TopGenresLoadedState(genList: topGenresData));
       } catch (ex) {
         emit(BrowseErrorState(ex.toString().replaceAll("Exception:", '')));
       }

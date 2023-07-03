@@ -6,4 +6,6 @@ abstract class BrowseAllEvent {}
 class GetBrowseAllEvent extends BrowseAllEvent {
   GetBrowseAllEvent();
 }
-class GetTopGenresEvent extends BrowseAllEvent {}
+class GetTopGenresEvent extends BrowseAllEvent {
+  GetTopGenresEvent();
+}

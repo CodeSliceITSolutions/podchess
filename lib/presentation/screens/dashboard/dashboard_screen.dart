@@ -36,6 +36,7 @@ class DashboardScreen extends StatelessWidget {
             SizedBox(height: 2.h),
             TopGenresWidget(),
             browsePadding,
+            SizedBox(height: 2.h),
             BrowseWidget(),
           ],
         ),
